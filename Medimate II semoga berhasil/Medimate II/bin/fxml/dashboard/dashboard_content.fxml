@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/24.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            styleClass="dashboard-main-content"
+            prefWidth="1280" prefHeight="800"
+            AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+            stylesheets="@../../css/styles.css">
+    <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                styleClass="dashboard-scroll-pane">
+        <VBox alignment="CENTER" spacing="10" styleClass="dashboard-content-wrapper" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <VBox prefWidth="1080" prefHeight="800" spacing="10" styleClass="dashboard-content-inner" VBox.vgrow="ALWAYS">
+                <!-- Header -->
+                <HBox alignment="CENTER_LEFT" spacing="16">
+                    <VBox spacing="6">
+                        <Label fx:id="welcomeLabel" styleClass="label-subtitle" text="Hi, User" />
+                        <Label fx:id="titleLabel" styleClass="font-h1" text="Selamat Datang!" />
+                    </VBox>
+                    <Region HBox.hgrow="ALWAYS" />
+                    <HBox alignment="CENTER_RIGHT" spacing="32">
+                        <Label styleClass="label-subtitle" text="ID" />
+                        <ImageView fx:id="avatarImageView" fitHeight="32" fitWidth="32" />
+                        <Label fx:id="userNameLabel" styleClass="font-h1" text="User" />
+                    </HBox>
+                </HBox>
+                <!-- Hero dan Kalender sejajar -->
+                <HBox alignment="CENTER_LEFT" spacing="50">
+                    <!-- Hero dibungkus card kecil -->
+                    <VBox alignment="CENTER" styleClass="hero-card" prefWidth="1000" minWidth="300" maxWidth="400" VBox.vgrow="ALWAYS">
+                        <Label fx:id="heroText"
+                            styleClass="dashboard-hero-text"
+                            text="Tidak perlu khawatir lupa minum obat
+Dapatkan pengingat otomatis setiap hari
+Kesehatan Anda, cukup dari rumah"
+                            wrapText="true" />
+                    </VBox>
+                    <!-- Kalender di sebelah kanan hero -->
+                    <VBox prefWidth="500" styleClass="card kalender-card" VBox.vgrow="ALWAYS">
+                        <fx:include source="kalender.fxml" />
+                    </VBox>
+                </HBox>
+                <!-- Visualisasi Grid dibungkus card -->
+                <VBox spacing="12" styleClass="card visualisasi-card" VBox.vgrow="ALWAYS">
+                    <fx:include source="visualisasi.fxml" />
+                </VBox>
+                <!-- Apotek Terdekat -->
+                <VBox spacing="12" styleClass="card apotek-card" VBox.vgrow="ALWAYS">
+                    <fx:include source="apotekterdekat.fxml" />
+                </VBox>
+            </VBox>
+        </VBox>
+    </ScrollPane>
+</AnchorPane> 

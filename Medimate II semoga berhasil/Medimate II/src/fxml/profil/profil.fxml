@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane styleClass="profil-root" xmlns="http://javafx.com/javafx/24.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Profile.ProfileController" stylesheets="@../../css/styles.css" prefWidth="1280" prefHeight="800">
+
+    <!-- Sidebar -->
+    <left>
+        <fx:include fx:id="sideNavInclude" source="../sidenavigation/sidenavigation.fxml" />
+    </left>
+
+    <!-- Main Content -->
+    <center>
+        <AnchorPane fx:id="mainContentPane" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" styleClass="profil-main-content">
+            <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                        AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                        styleClass="profil-scroll-pane">
+                <VBox alignment="CENTER" spacing="30" styleClass="profil-content-wrapper" VBox.vgrow="ALWAYS">
+                    <padding>
+                        <Insets top="20" right="20" bottom="20" left="20"/>
+                    </padding>
+                    <VBox prefWidth="1080" prefHeight="800" spacing="30" styleClass="profil-content-inner" VBox.vgrow="ALWAYS">
+                        <!-- Header -->
+                        <HBox alignment="CENTER_LEFT" spacing="16">
+                            <VBox spacing="6">
+                                <Label styleClass="label-subtitle" text="Hi, Raden Carel" />
+                                <Label styleClass="font-h1" text="Profil" />
+                            </VBox>
+                            <Region HBox.hgrow="ALWAYS" />
+                            <HBox alignment="CENTER_RIGHT" spacing="32">
+                                <Label styleClass="label-subtitle" text="ID" />
+                                <Label styleClass="font-h1" text="Raden Carel" />
+                            </HBox>
+                        </HBox>
+
+                        <!-- Profile Content -->
+                        <HBox spacing="32">
+                            <!-- Left Column: Avatar & Basic Info -->
+                            <VBox spacing="24" prefWidth="400" minWidth="200" maxWidth="600" styleClass="card" VBox.vgrow="ALWAYS">
+                                <VBox alignment="CENTER" spacing="16">
+                                    <Label text="Avatar" styleClass="font-h2" />
+                                    <VBox alignment="CENTER" spacing="8">
+                                        <Label text="Raden Carel" styleClass="font-h2" />
+                                        <Label text="raden.carel@email.com" styleClass="label-subtitle" />
+                                    </VBox>
+                                </VBox>
+                                <VBox spacing="16">
+                                    <Label text="Ubah Foto" styleClass="button-secondary" />
+                                    <Label text="Ubah Password" styleClass="button-secondary" />
+                                </VBox>
+                            </VBox>
+
+                            <!-- Right Column: Detailed Info -->
+                            <VBox spacing="24" prefWidth="600" minWidth="200" maxWidth="900" styleClass="card" VBox.vgrow="ALWAYS">
+                                <Label text="Informasi Pribadi" styleClass="font-h2" />
+                                
+                                <VBox spacing="16">
+                                    <Label text="Username: raden_carel" styleClass="label-subtitle" />
+                                    <Label text="Email: raden.carel@email.com" styleClass="label-subtitle" />
+                                    <Label text="Nomor HP: +62 812-3456-7890" styleClass="label-subtitle" />
+                                    <Label text="Tanggal Lahir: 15 Januari 1995" styleClass="label-subtitle" />
+                                </VBox>
+
+                                <Label text="Simpan Perubahan" styleClass="button-primary" />
+                            </VBox>
+                        </HBox>
+                    </VBox>
+                </VBox>
+            </ScrollPane>
+        </AnchorPane>
+    </center>
+</BorderPane>

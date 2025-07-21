@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefWidth="1280" prefHeight="800" spacing="0" stylesheets="@../../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Login.LoginController" styleClass="login-root">
+
+    <!-- Panel Kiri dengan ImageView full size -->
+    <StackPane fx:id="leftPane" styleClass="login-left-pane" prefWidth="640" maxWidth="640" minWidth="320" HBox.hgrow="ALWAYS">
+        <ImageView fitWidth="640" fitHeight="800" preserveRatio="false" pickOnBounds="true">
+            <image>
+                <Image url="@../../images/background-loginresgister.png" />
+            </image>
+        </ImageView>
+    </StackPane>
+
+    <!-- Panel Kanan -->
+    <AnchorPane styleClass="login-right-pane" HBox.hgrow="ALWAYS">
+        <VBox alignment="CENTER"
+              spacing="28"
+              AnchorPane.leftAnchor="40.0"
+              AnchorPane.rightAnchor="40.0"
+              AnchorPane.topAnchor="60.0"
+              AnchorPane.bottomAnchor="30.0"
+              VBox.vgrow="ALWAYS"
+              maxWidth="600">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <!-- Judul -->
+            <Label alignment="CENTER" text="Selamat Datang" styleClass="label-title login-title">
+                <font>
+                    <Font name="SansSerif Bold" size="36.0" />
+                </font>
+            </Label>
+
+            <!-- Link ke Daftar -->
+            <HBox alignment="CENTER" spacing="8">
+                <Label text="Belum Punya Akun?" styleClass="label-subtitle" />
+                <Hyperlink text="Daftar" onAction="#handleDaftar" styleClass="label-link" />
+            </HBox>
+
+            <!-- Email -->
+            <VBox alignment="TOP_LEFT" spacing="7" maxWidth="Infinity">
+                <Label text="Email" styleClass="label-subtitle" />
+                <TextField fx:id="emailField" promptText="Email address" maxWidth="Infinity" styleClass="text-field" />
+            </VBox>
+
+            <!-- Password -->
+            <VBox alignment="TOP_LEFT" spacing="7" maxWidth="Infinity">
+                <Label text="Password" styleClass="label-subtitle" />
+                <PasswordField fx:id="passwordField" promptText="Password" maxWidth="Infinity" styleClass="password-field" />
+            </VBox>
+
+            <!-- Tombol Login -->
+            <Button text="Masuk"
+                    fx:id="loginButton"
+                    onAction="#handleLogin"
+                    maxWidth="Infinity"
+                    prefHeight="40.0"
+                    styleClass="button-primary" />
+
+            <!-- Checkbox + Lupa Password -->
+            <HBox alignment="CENTER_LEFT" spacing="12" maxWidth="Infinity">
+                <CheckBox fx:id="rememberMeCheckBox" text="Ingat saya" />
+                <Region HBox.hgrow="ALWAYS" />
+                <Hyperlink text="Lupa password?" onAction="#handleForgotPassword" styleClass="label-link" />
+            </HBox>
+
+            <!-- Notifikasi -->
+            <Label fx:id="notifLabel" styleClass="danger" wrapText="true" maxWidth="Infinity"/>
+        </VBox>
+    </AnchorPane>
+</HBox>

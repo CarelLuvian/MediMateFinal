@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.web.WebView?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<AnchorPane prefWidth="1080" prefHeight="800" xmlns="http://javafx.com/javafx/24.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Lokasi.LokasiController">
+    <children>
+        <Button fx:id="backButton" text="Back" layoutX="40" layoutY="10" onAction="#handleBack" />
+        <Label fx:id="namaApotekLabel" layoutX="40" layoutY="30" styleClass="font-h1" text="Nama Apotek" />
+        <WebView fx:id="mapsWebView" AnchorPane.leftAnchor="40" AnchorPane.topAnchor="80" AnchorPane.rightAnchor="40" AnchorPane.bottomAnchor="40" prefWidth="1000" prefHeight="680" />
+    </children>
+</AnchorPane> 

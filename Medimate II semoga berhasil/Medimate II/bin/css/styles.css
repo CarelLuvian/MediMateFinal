@@ -1,0 +1,531 @@
+/* Root styles */
+.root {
+    -fx-background-color: #F5F7FA;
+    -fx-font-family: 'Inter', sans-serif;
+}
+
+/* Dashboard styles */
+.dashboard-root {
+    -fx-background-color: #F5F7FA;
+}
+
+.dashboard-main-content {
+    -fx-background-color: #F5F7FA;
+}
+
+.dashboard-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.dashboard-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.dashboard-content-wrapper {
+    -fx-padding: 32px;
+    -fx-background-color: transparent;
+}
+
+.dashboard-content-inner {
+    -fx-background-color: transparent;
+}
+
+/* Hero section */
+.dashboard-hero {
+    -fx-background-color: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 4);
+}
+
+.dashboard-hero-text {
+    -fx-text-fill: #222;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-alignment: center;
+}
+
+.hero-card {
+    -fx-background-color: white;
+    -fx-background-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 24 24 24 24;
+    -fx-alignment: center;
+    -fx-spacing: 8;
+}
+
+.hero-card .dashboard-hero-text {
+    -fx-text-fill: #222;
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-background-color: transparent;
+    -fx-padding: 0;
+    -fx-alignment: center;
+}
+
+/* Card styles */
+.card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 24px;
+}
+
+/* Typography */
+.font-h1 {
+    -fx-font-size: 32px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #1a202c;
+}
+
+.font-h2 {
+    -fx-font-size: 24px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1a202c;
+}
+
+.font-h3 {
+    -fx-font-size: 20px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1a202c;
+}
+
+.font-content-title {
+    -fx-font-size: 16px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1a202c;
+}
+
+.label-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: 600;
+    -fx-text-fill: #1a202c;
+}
+
+.label-subtitle {
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #718096;
+}
+
+.label-link {
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #3182ce;
+    -fx-cursor: hand;
+}
+
+.label-link:hover {
+    -fx-text-fill: #2c5282;
+}
+
+.font-lihatsemua {
+    -fx-font-size: 14px;
+    -fx-font-weight: 500;
+    -fx-text-fill: #3182ce;
+    -fx-cursor: hand;
+}
+
+.font-lihatsemua:hover {
+    -fx-text-fill: #2c5282;
+}
+
+/* Button styles */
+.button-primary {
+    -fx-background-color: #3182ce;
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 12 24;
+}
+
+.button-primary:hover {
+    -fx-background-color: #2c5282;
+}
+
+.button-secondary {
+    -fx-background-color: #e2e8f0;
+    -fx-text-fill: #4a5568;
+    -fx-font-weight: 600;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 12 24;
+}
+
+.button-secondary:hover {
+    -fx-background-color: #cbd5e0;
+}
+
+.button-yellow-bold {
+    -fx-background-color: #f6ad55;
+    -fx-text-fill: white;
+    -fx-font-weight: 700;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+}
+
+.button-yellow-bold:hover {
+    -fx-background-color: #ed8936;
+}
+
+/* Sidebar styles */
+.sidebar {
+    -fx-background-color: white;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 0);
+    -fx-padding: 24px 16px;
+    -fx-pref-width: 280;
+}
+
+.sidebar-logo {
+    -fx-font-size: 26px;
+    -fx-font-weight: 800;
+    -fx-text-fill: #185AFD;
+    -fx-padding: 0 0 24 0;
+}
+
+.sidebar-menu {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4a5568;
+    -fx-font-weight: 500;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 12 16;
+    -fx-alignment: CENTER_LEFT;
+    -fx-graphic-text-gap: 12;
+}
+
+.sidebar-menu:hover {
+    -fx-background-color: #f7fafc;
+    -fx-text-fill: #3182ce;
+}
+
+.sidebar-menu.active, .sidebar-menu-active {
+    -fx-background-color: #ebf8ff;
+    -fx-text-fill: #3182ce;
+}
+
+.sidebar-menu-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: inherit;
+    -fx-font-weight: 600;
+}
+
+/* Login/Register styles */
+.login-root, .register-root {
+    -fx-background-color: #F5F7FA;
+}
+
+.login-left-pane, .register-left-pane {
+    -fx-background-color: transparent;
+    -fx-alignment: center;
+}
+
+.login-logo, .register-logo {
+    -fx-text-fill: white;
+    -fx-font-size: 48px;
+    -fx-font-weight: 700;
+}
+
+.login-right-pane, .register-right-pane {
+    -fx-background-color: white;
+}
+
+.login-title, .register-title {
+    -fx-text-fill: #1a202c;
+}
+
+/* Form styles */
+.text-field {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+}
+
+.text-field:focused {
+    -fx-border-color: #3182ce;
+    -fx-background-color: white;
+}
+
+.password-field {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+}
+
+.password-field:focused {
+    -fx-border-color: #3182ce;
+    -fx-background-color: white;
+}
+
+.date-picker {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+}
+
+.date-picker:focused {
+    -fx-border-color: #3182ce;
+    -fx-background-color: white;
+}
+
+.combo-box {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+}
+
+.combo-box:focused {
+    -fx-border-color: #3182ce;
+    -fx-background-color: white;
+}
+
+.combo-month {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 8 12;
+    -fx-font-size: 14px;
+}
+
+.text-area {
+    -fx-background-color: #f7fafc;
+    -fx-border-color: #e2e8f0;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+    -fx-padding: 12 16;
+    -fx-font-size: 14px;
+}
+
+.text-area:focused {
+    -fx-border-color: #3182ce;
+    -fx-background-color: white;
+}
+
+/* Toggle button styles */
+.toggle-tab {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4a5568;
+    -fx-font-weight: 500;
+    -fx-font-size: 14px;
+    -fx-background-radius: 8;
+    -fx-cursor: hand;
+    -fx-padding: 8 16;
+    -fx-border-color: transparent;
+}
+
+.toggle-tab:hover {
+    -fx-background-color: #f7fafc;
+}
+
+.toggle-tab:selected {
+    -fx-background-color: #ebf8ff;
+    -fx-text-fill: #3182ce;
+}
+
+/* Chart styles */
+.visualisasi-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 20px;
+}
+
+.kalender-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 20px;
+}
+
+.apotek-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 20px;
+}
+
+/* Calendar styles */
+.tanggal-label {
+    -fx-font-size: 14px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #000000;
+    -fx-cursor: hand;
+    -fx-padding: 8;
+    -fx-background-radius: 20;
+    -fx-alignment: center;
+    -fx-background-color: transparent;
+}
+
+.tanggal-label:hover {
+    -fx-background-color: #e2e8f0;
+}
+
+.tanggal-label.selected {
+    -fx-background-color: #90cdf4;
+    -fx-text-fill: #fff;
+    -fx-alignment: center;
+}
+
+/* Donut chart styles */
+.donut-chart {
+    -fx-pie-label-visible: false;
+}
+
+.donut-chart .chart-pie {
+    -fx-background-radius: 0;
+}
+
+/* Profile styles */
+.profil-root {
+    -fx-background-color: #F5F7FA;
+}
+
+.profil-main-content {
+    -fx-background-color: #F5F7FA;
+}
+
+.profil-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.profil-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.profil-content-wrapper {
+    -fx-padding: 32px;
+    -fx-background-color: transparent;
+}
+
+.profil-content-inner {
+    -fx-background-color: transparent;
+}
+
+.profile-avatar {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 60;
+}
+
+/* Input obat styles */
+.inputobat1-root, .inputobat2-root {
+    -fx-background-color: #F5F7FA;
+}
+
+.inputobat1-main-content, .inputobat2-main-content {
+    -fx-background-color: #F5F7FA;
+}
+
+.inputobat1-scroll-pane, .inputobat2-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.inputobat1-scroll-pane .viewport, .inputobat2-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.inputobat1-content-wrapper, .inputobat2-content-wrapper {
+    -fx-padding: 32px;
+    -fx-background-color: transparent;
+}
+
+.inputobat1-content-inner, .inputobat2-content-inner {
+    -fx-background-color: transparent;
+}
+
+.inputobat1-form-card, .inputobat2-form-card {
+    -fx-background-color: white;
+    -fx-background-radius: 12;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.08), 8, 0, 0, 2);
+    -fx-padding: 24px;
+}
+
+/* Detail rekomendasi apotek styles */
+.detailrekomendasiapotek-root {
+    -fx-background-color: #F5F7FA;
+}
+
+.detailrekomendasiapotek-main-content {
+    -fx-background-color: #F5F7FA;
+}
+
+.detailrekomendasiapotek-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-background: transparent;
+}
+
+.detailrekomendasiapotek-scroll-pane .viewport {
+    -fx-background-color: transparent;
+}
+
+.detailrekomendasiapotek-content-wrapper {
+    -fx-padding: 32px;
+    -fx-background-color: transparent;
+}
+
+.detailrekomendasiapotek-content-inner {
+    -fx-background-color: transparent;
+}
+
+/* Utility classes */
+.danger {
+    -fx-text-fill: #e53e3e;
+    -fx-font-size: 14px;
+}
+
+.success {
+    -fx-text-fill: #38a169;
+    -fx-font-size: 14px;
+}
+
+.warning {
+    -fx-text-fill: #d69e2e;
+    -fx-font-size: 14px;
+}
+
+.label-halo {
+    -fx-text-fill: #000000;
+    -fx-font-weight: 700;
+}
+
+.switch-toggle {
+    -fx-background-color: #e2e8f0;
+    -fx-background-radius: 16;
+    -fx-padding: 4 24 4 4;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4a5568;
+    -fx-pref-width: 60;
+    -fx-pref-height: 28;
+    -fx-cursor: hand;
+    -fx-alignment: center-left;
+    -fx-border-color: #cbd5e0;
+    -fx-border-radius: 16;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.04), 2, 0, 0, 1);
+}
+.switch-toggle:selected {
+    -fx-background-color: #3182ce;
+    -fx-text-fill: #fff;
+    -fx-alignment: center-right;
+}

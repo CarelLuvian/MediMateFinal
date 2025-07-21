@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="TOP_LEFT" prefWidth="200" spacing="20" styleClass="sidebar" xmlns="http://javafx.com/javafx/24.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SideNavigation.SideNavigationController" stylesheets="@../../css/styles.css">
+    <padding>
+        <Insets bottom="30" left="30" right="30" top="30" />
+    </padding>
+
+    <!-- Logo -->
+    <Label styleClass="sidebar-logo" text="MediMate" />
+
+    <!-- Menu: Dashboard -->
+    <HBox fx:id="menuDashboard" onMouseClicked="#handleDashboardClick" spacing="10" styleClass="sidebar-menu sidebar-menu-active">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <ImageView fitHeight="18" fitWidth="18" pickOnBounds="true" preserveRatio="true">
+            <image>
+            <Image url="@../../images/dashboard-icon.png" />
+            </image>
+        </ImageView>
+        <Label styleClass="sidebar-menu-label" text="Dashboard" />
+    </HBox>
+
+    <!-- Menu: Calendar -->
+    <HBox fx:id="menuCalendar" onMouseClicked="#handleCalendarClick" spacing="10" styleClass="sidebar-menu">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <ImageView fitHeight="18" fitWidth="18" preserveRatio="true">
+            <image>
+                <Image url="@../../images/calendar-icon.png" />
+            </image>
+        </ImageView>
+        <Label styleClass="sidebar-menu-label" text="Calendar" />
+    </HBox>
+
+    <!-- Menu: Profile -->
+    <HBox fx:id="menuProfile" onMouseClicked="#handleProfileClick" spacing="10" styleClass="sidebar-menu">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <ImageView fitHeight="18" fitWidth="18" preserveRatio="true">
+            <image>
+                <Image url="@../../images/profile-icon.png" />
+            </image>
+        </ImageView>
+        <Label styleClass="sidebar-menu-label" text="Profile" />
+    </HBox>
+
+    <!-- Menu: Logout -->
+    <HBox fx:id="menuLogout" onMouseClicked="#handleLogoutClick" spacing="10" styleClass="sidebar-menu">
+        <padding>
+            <Insets bottom="10" left="10" right="10" top="10" />
+        </padding>
+        <ImageView fitHeight="18" fitWidth="18" preserveRatio="true">
+            <image>
+                <Image url="@../../images/logout-icon.png" />
+            </image>
+        </ImageView>
+        <Label styleClass="sidebar-menu-label" text="Logout" />
+    </HBox>
+
+</VBox>

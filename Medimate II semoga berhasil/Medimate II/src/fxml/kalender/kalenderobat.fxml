@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefHeight="800" prefWidth="1280" styleClass="dashboard-root" stylesheets="@../../css/styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Kalender.KalenderObatController">
+
+    <!-- Main Content -->
+    <ScrollPane fitToWidth="true" prefHeight="800" prefWidth="1280" style="-fx-background-color: transparent;">
+        <VBox alignment="TOP_LEFT" prefHeight="800" prefWidth="1280" spacing="30" styleClass="dashboard-content-inner" VBox.vgrow="ALWAYS">
+            <padding>
+                <Insets bottom="20" left="20" right="20" top="20" />
+            </padding>
+                <!-- Header -->
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <VBox spacing="5">
+                        <Label styleClass="font-h1" text="Kalender Obat" />
+                    </VBox>
+                    <Region HBox.hgrow="ALWAYS" />
+                    <HBox alignment="CENTER_RIGHT" spacing="10">
+                        <Label styleClass="label-subtitle" text="ID" />
+                        <ImageView fitHeight="32" fitWidth="32" />
+                    </HBox>
+                </HBox>
+                <!-- Tab Buttons -->
+                <HBox alignment="CENTER_LEFT" spacing="10">
+                    <ToggleButton fx:id="mendatangTab" selected="true" styleClass="toggle-tab" text="Mendatang" />
+                    <ToggleButton fx:id="yangLaluTab" styleClass="toggle-tab" text="Yang lalu" />
+                </HBox>
+                <!-- Toolbar Bulan + Tombol + Jadwal -->
+                <HBox alignment="CENTER_RIGHT" spacing="10">
+                    <Button fx:id="addScheduleButton" contentDisplay="RIGHT" onAction="#handleAddSchedule" prefHeight="36" prefWidth="100" styleClass="button-primary" text="+ Jadwal" />
+                    <ComboBox fx:id="monthComboBox" prefWidth="120" promptText="Pilih Bulan" styleClass="combo-month" />
+                </HBox>
+                <!-- Jadwal Container -->
+                <VBox fx:id="scheduleContainer" spacing="10" styleClass="card" VBox.vgrow="ALWAYS">
+                    <!-- Jadwal items akan dimasukkan di sini -->
+                </VBox>
+            </VBox>
+        </ScrollPane>
+    </HBox>

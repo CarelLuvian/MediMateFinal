@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/24.0.2"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="controllers.Dashboard.ApotekTerdekatController"
+            prefWidth="1100" prefHeight="300"
+            styleClass="card"
+            stylesheets="@../../css/styles.css">
+
+    <VBox spacing="20" AnchorPane.topAnchor="20" AnchorPane.leftAnchor="20" AnchorPane.rightAnchor="20" alignment="CENTER">
+        <padding>
+            <Insets top="20" right="20" bottom="20" left="20"/>
+        </padding>
+        <!-- Header -->
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label text="Rekomendasi Apotek Terdekat Dari Anda" styleClass="font-h2" />
+            <HBox alignment="CENTER_RIGHT" HBox.hgrow="ALWAYS">
+                <Label text="Lihat Semua" styleClass="font-lihatsemua" onMouseClicked="#handleLihatSemua" />
+                <Label text=" > " styleClass="font-lihatsemua" />
+            </HBox>
+        </HBox>
+
+        <!-- Apotek Cards -->
+        <HBox spacing="20" alignment="CENTER">
+
+            <!-- Kartu 1 -->
+            <VBox spacing="10" prefWidth="500" minWidth="200" maxWidth="600" styleClass="card" VBox.vgrow="ALWAYS">
+                <Label fx:id="labelApotek1" text="Pharmacies UII Farma" styleClass="font-content-title" />
+                <Label fx:id="labelSub1" text="terdekat dari anda" styleClass="font-content-title" />
+                <Separator />
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <ImageView fx:id="iconClock1" fitWidth="16" fitHeight="16" />
+                    <Label text="Buka 24 Jam" styleClass="font-content-title" />
+                </HBox>
+                <Button fx:id="btnLokasi1" text="Lokasi" styleClass="button-yellow-bold" prefWidth="100" />
+            </VBox>
+
+            <!-- Kartu 2 -->
+            <VBox spacing="10" prefWidth="500" minWidth="200" maxWidth="600" styleClass="card" VBox.vgrow="ALWAYS">
+                <Label fx:id="labelApotek2" text="Apotek K-24 Besi Sleman" styleClass="font-content-title" />
+                <Label fx:id="labelSub2" text="terdekat dari anda" styleClass="font-content-title" />
+                <Separator />
+                <HBox spacing="5" alignment="CENTER_LEFT">
+                    <ImageView fx:id="iconClock2" fitWidth="16" fitHeight="16" />
+                    <Label text="Buka 24 Jam" styleClass="font-content-title" />
+                </HBox>
+                <Button fx:id="btnLokasi2" text="Lokasi" styleClass="button-yellow-bold" prefWidth="100" />
+            </VBox>
+
+        </HBox>
+
+    </VBox>
+</AnchorPane>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+
+<HBox prefWidth="1280" prefHeight="800" spacing="0" stylesheets="@../../css/styles.css" xmlns="http://javafx.com/javafx/24.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.InputObat1.InputObat1Controller" styleClass="inputobat1-root">
+
+    <!-- Main Content -->
+    <AnchorPane fx:id="mainContentPane" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" styleClass="inputobat1-main-content">
+        <ScrollPane fitToWidth="true" fitToHeight="true" hbarPolicy="NEVER" vbarPolicy="AS_NEEDED"
+                    AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0"
+                    styleClass="inputobat1-scroll-pane">
+            <VBox alignment="CENTER" spacing="30" styleClass="inputobat1-content-wrapper" VBox.vgrow="ALWAYS">
+                <padding>
+                    <Insets top="20" right="20" bottom="20" left="20"/>
+                </padding>
+                <VBox prefWidth="1080" prefHeight="800" spacing="30" styleClass="inputobat1-content-inner" VBox.vgrow="ALWAYS">
+                    <!-- Header -->
+                    <HBox alignment="CENTER_LEFT" spacing="16">
+                        <VBox spacing="6">
+                            <Label styleClass="font-h1" text="Input Obat" />
+                        </VBox>
+                        <Region HBox.hgrow="ALWAYS" />
+                    </HBox>
+
+                    <!-- Form Container -->
+                    <VBox spacing="20" prefWidth="800" minWidth="200" maxWidth="1000" styleClass="card inputobat1-form-card" VBox.vgrow="ALWAYS">
+                        <Label text="Informasi Obat" styleClass="font-h2" />
+                        
+                        <!-- Nama Obat -->
+                        <VBox spacing="8">
+                            <Label text="Nama Obat" styleClass="label-subtitle" />
+                            <TextField fx:id="namaObatField" promptText="Masukkan nama obat" maxWidth="Infinity" styleClass="text-field" />
+                        </VBox>
+
+                        <!-- Kategori Obat -->
+                        <VBox spacing="8">
+                            <Label text="Kategori Obat" styleClass="label-subtitle" />
+                            <ComboBox fx:id="kategoriComboBox" promptText="Pilih kategori" maxWidth="Infinity" styleClass="combo-box" />
+                        </VBox>
+
+                        <!-- Dosis -->
+                        <VBox spacing="8">
+                            <Label text="Dosis" styleClass="label-subtitle" />
+                            <TextField fx:id="dosisField" promptText="Contoh: 1 tablet" maxWidth="Infinity" styleClass="text-field" />
+                        </VBox>
+
+                        <!-- Frekuensi -->
+                        <VBox spacing="8">
+                            <Label text="Frekuensi" styleClass="label-subtitle" />
+                            <ComboBox fx:id="frekuensiComboBox" promptText="Pilih frekuensi" maxWidth="Infinity" styleClass="combo-box" />
+                        </VBox>
+
+                        <!-- Tombol Lanjutkan -->
+                        <Button fx:id="lanjutkanButton" text="Lanjutkan" onAction="#handleLanjutkan" maxWidth="Infinity" prefHeight="40" styleClass="button-primary" />
+                    </VBox>
+                </VBox>
+            </VBox>
+        </ScrollPane>
+    </AnchorPane>
+</HBox>

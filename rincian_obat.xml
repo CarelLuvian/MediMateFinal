@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rincianobatlist>
+    <rincian>
+        <email>tes@gmail.com</email>
+        <namaObat>pepek</namaObat>
+        <kategori>Analgesik</kategori>
+        <dosis>1 tablet</dosis>
+        <frekuensi>2x sehari</frekuensi>
+        <tanggalMulai>2025-07-15</tanggalMulai>
+        <tanggalSelesai>2025-07-17</tanggalSelesai>
+        <waktuMinum>21:00</waktuMinum>
+        <reminder>10 menit sebelum</reminder>
+        <catatan>q</catatan>
+    </rincian>
+    <rincian>
+        <email>tes@gmail.com</email>
+        <namaObat>cek</namaObat>
+        <kategori>Antibiotik</kategori>
+        <dosis>3 tablet</dosis>
+        <frekuensi>1x sehari</frekuensi>
+        <tanggalMulai>2025-07-21</tanggalMulai>
+        <tanggalSelesai>2025-07-24</tanggalSelesai>
+        <waktuMinum>18:00</waktuMinum>
+        <reminder>10 menit sebelum</reminder>
+        <catatan>po</catatan>
+    </rincian>
+    <rincian>
+        <email>tes@gmail.com</email>
+        <namaObat>jelek</namaObat>
+        <kategori>Antasida</kategori>
+        <dosis>2 tablet</dosis>
+        <frekuensi>1x sehari</frekuensi>
+        <tanggalMulai>2025-07-23</tanggalMulai>
+        <tanggalSelesai>2025-07-27</tanggalSelesai>
+        <waktuMinum>12:00</waktuMinum>
+        <reminder>5 menit sebelum</reminder>
+        <catatan>wao</catatan>
+    </rincian>
+    <rincian>
+        <email>tes@gmail.com</email>
+        <namaObat>pucuk</namaObat>
+        <kategori>Analgesik</kategori>
+        <dosis>3 tablet</dosis>
+        <frekuensi>2x sehari</frekuensi>
+        <tanggalMulai>2025-07-21</tanggalMulai>
+        <tanggalSelesai>2025-07-31</tanggalSelesai>
+        <waktuMinum>21:00</waktuMinum>
+        <reminder>5 menit sebelum</reminder>
+        <catatan>wp</catatan>
+    </rincian>
+    <rincian>
+        <email>tes@gmail.com</email>
+        <namaObat>adiawwj</namaObat>
+        <kategori>Analgesik</kategori>
+        <dosis>3</dosis>
+        <frekuensi>1x sehari</frekuensi>
+        <tanggalMulai>2025-03-31</tanggalMulai>
+        <tanggalSelesai>2025-04-01</tanggalSelesai>
+        <waktuMinum>21:00</waktuMinum>
+        <reminder>5 menit sebelum</reminder>
+        <catatan>awd</catatan>
+    </rincian>
+</rincianobatlist>

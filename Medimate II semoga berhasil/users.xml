@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+    <user>
+        <nama>qwertya</nama>
+        <email>qw@gmail.com</email>
+        <password>123456</password>
+        <tanggalLahir>2025-07-01</tanggalLahir>
+        <nomorHp>123456</nomorHp>
+    </user>
+    <user>
+        <nama>adminmedimate</nama>
+        <email>medimate@gmail.com</email>
+        <password>123456</password>
+        <tanggalLahir>2004-08-11</tanggalLahir>
+        <nomorHp>087898546111</nomorHp>
+    </user>
+</users>

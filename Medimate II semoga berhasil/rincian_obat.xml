@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<rincianobatlist>
+    <rincian>
+        <email>medimate@gmail.com</email>
+        <namaObat>paracetamol</namaObat>
+        <kategori>Analgesik</kategori>
+        <dosis>1 tablet</dosis>
+        <frekuensi>3x sehari</frekuensi>
+        <tanggalMulai>2025-07-21</tanggalMulai>
+        <tanggalSelesai>2025-07-26</tanggalSelesai>
+        <waktuMinum>09:00</waktuMinum>
+        <reminder>15 menit sebelum</reminder>
+        <catatan>obat setelah makan</catatan>
+    </rincian>
+    <rincian>
+        <email>medimate@gmail.com</email>
+        <namaObat>entrostop</namaObat>
+        <kategori>Antibiotik</kategori>
+        <dosis>1 kapsul</dosis>
+        <frekuensi>1x sehari</frekuensi>
+        <tanggalMulai>2025-07-14</tanggalMulai>
+        <tanggalSelesai>2025-07-26</tanggalSelesai>
+        <waktuMinum>06:00</waktuMinum>
+        <reminder>10 menit sebelum</reminder>
+        <catatan>obat makan</catatan>
+    </rincian>
+    <rincian>
+        <email>medimate@gmail.com</email>
+        <namaObat>diapet</namaObat>
+        <kategori>Antipiretik</kategori>
+        <dosis>1 kapsul</dosis>
+        <frekuensi>3x sehari</frekuensi>
+        <tanggalMulai>2025-07-14</tanggalMulai>
+        <tanggalSelesai>2025-07-19</tanggalSelesai>
+        <waktuMinum>12:00</waktuMinum>
+        <reminder>15 menit sebelum</reminder>
+        <catatan>obat minum</catatan>
+    </rincian>
+</rincianobatlist>

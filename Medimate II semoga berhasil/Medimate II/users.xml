@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<users>
+    <user>
+        <nama>ariel1</nama>
+        <email>ariel1@gmail.com</email>
+        <password>123456</password>
+        <tanggalLahir>2025-07-18</tanggalLahir>
+        <nomorHp>123456</nomorHp>
+    </user>
+    <user>
+        <nama>carel</nama>
+        <email>remind12@gmail.com</email>
+        <password>123456</password>
+        <tanggalLahir>2004-03-10</tanggalLahir>
+        <nomorHp>082225266998</nomorHp>
+    </user>
+    <user>
+        <nama>admin</nama>
+        <email>admin@gmail.com</email>
+        <password>123456</password>
+        <tanggalLahir>2001-07-01</tanggalLahir>
+        <nomorHp>852852963</nomorHp>
+    </user>
+</users>
